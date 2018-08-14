@@ -20,3 +20,14 @@ collections:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: vehicles
+    label: 'Vehicle'
+    folder: 'vehicles'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}.md'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Cover Image', name: 'cover', widget: 'image' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
