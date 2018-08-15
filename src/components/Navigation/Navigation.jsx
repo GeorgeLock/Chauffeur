@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import NavigationDrawer from "react-md/lib/NavigationDrawers";
-import ToolbarActions from "../ToolbarActions/ToolbarActions";
-import Footer from "../Footer/Footer";
-import GetNavList from "./NavList";
-import "./Navigation.scss";
+import React, { Component } from 'react';
+import NavigationDrawer from 'react-md/lib/NavigationDrawers';
+import ToolbarActions from '../ToolbarActions/ToolbarActions';
+import Footer from '../Footer/Footer';
+import GetNavList from './NavList';
+import Header from '../Header/Header';
+import './Navigation.scss';
 
 class Navigation extends Component {
   render() {
     const { children, config, LocalTitle } = this.props;
-    const footerLinks = LocalTitle !== "About";
+    const footerLinks = LocalTitle !== 'About';
     return (
       <NavigationDrawer
         drawerTitle={config.siteTitle}
@@ -20,6 +21,7 @@ class Navigation extends Component {
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         toolbarActions={<ToolbarActions config={config} />}
       >
+        <Header />
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>
