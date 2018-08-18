@@ -3,8 +3,18 @@ import React from 'react';
 const ContactForm = () => {
   return (
     <div>
-      <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
-        <input name="name" placeholder="John Doe" type="text" />
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <label>
+          Your Name: <input type="text" name="name" />
+        </label>
+        <label>
+          Message: <textarea name="message" />
+        </label>
         <button>Send</button>
       </form>
     </div>
