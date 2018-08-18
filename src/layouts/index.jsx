@@ -1,10 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import 'font-awesome/css/all.css';
+
 import Navigation from '../components/Navigation/Navigation';
 import Header from '../components/Header/Header';
 import config from '../../data/SiteConfig';
 
+import 'font-awesome/css/all.css';
 import favIcon from '../favicon.png';
 import './index.scss';
 import './global.scss';
