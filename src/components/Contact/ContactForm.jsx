@@ -6,7 +6,14 @@ const ContactForm = () => {
     <div id="contact" className="container">
       <div className="row justify-content-center">
         <div className="col-12 col-md-8 col-lg-8 pb-5">
-          <form action="" className="contact-form">
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="#"
+            className="contact-form"
+          >
             <div className="card border-primary">
               <div className="card-header p-0">
                 <div className="bg-primary text-white text-center py-2">
@@ -114,10 +121,6 @@ const ContactForm = () => {
 export default ContactForm;
 {
   /* <form
-name="contact"
-method="post"
-data-netlify="true"
-data-netlify-honeypot="bot-field"
-action="#"
+
 > */
 }
