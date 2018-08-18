@@ -5,7 +5,6 @@ import Navigation from '../components/Navigation/Navigation';
 import Header from '../components/Header/Header';
 import config from '../../data/SiteConfig';
 
-import 'font-awesome/css/all.css';
 import favIcon from '../favicon.png';
 import './index.scss';
 import './global.scss';
@@ -56,6 +55,12 @@ export default class MainLayout extends React.Component {
           <Helmet>
             <meta name="description" content={config.siteDescription} />
             <link rel="shortcut icon" type="image/png" href={favIcon} />
+            <link
+              rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+              crossorigin="anonymous"
+            />
             <Header />
           </Helmet>
           {children()}
