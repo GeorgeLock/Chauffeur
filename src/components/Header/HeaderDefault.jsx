@@ -24,7 +24,7 @@ class HeaderDefault extends Component {
     //   }
     // }
     return (
-      <div className="header" style={}>
+      <div className="header">
         <img
           className="header-image"
           src={HeaderImage}
