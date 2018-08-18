@@ -17,9 +17,9 @@ class Footer extends Component {
       <footer className={fixedFooter ? 'footer footer-fixed' : 'footer'}>
         {userLinks ? <UserLinks config={config} labeled /> : null}
         <div className="notice-container">
-          <div className="copyright">
+          {/* <div className="copyright">
             <h4>{copyright}</h4>
-          </div>
+          </div> */}
           <div className="rss" />
         </div>
       </footer>

@@ -11,6 +11,27 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
+  font-size: 18px;
+}
+
+.main-container {
+  padding-top: 93vh;
+}
+nav {
+  width: 80% !important;
+}
+.md-list {
+  .material-icons {
+    color: #000;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+.md-text {
+  font-size: 16px !important;
+  font-weight: 600 !important;
 }
 
 .fa-facebook {
@@ -26,7 +47,7 @@ body {
   color: #2b6dad !important;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600|Montserrat:300,400,500|Material+Icons');
 @import '~react-md/src/scss/react-md';
 @import 'theme.scss';
 

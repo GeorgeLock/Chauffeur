@@ -5,9 +5,10 @@ import Navigation from '../components/Navigation/Navigation';
 import Header from '../components/Header/Header';
 import config from '../../data/SiteConfig';
 
+import favIcon from '../favicon.png';
 import './index.scss';
 import './global.scss';
-
+import './bootstrap-grid.min.css';
 export default class MainLayout extends React.Component {
   getLocalTitle() {
     function capitalize(string) {
@@ -53,6 +54,7 @@ export default class MainLayout extends React.Component {
         <div>
           <Helmet>
             <meta name="description" content={config.siteDescription} />
+            <link rel="shortcut icon" type="image/png" href={favIcon} />
             <Header />
           </Helmet>
           {children()}

@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Header.scss';
-const Header = () => {
-  return (
-    <div className="header">
-      <iframe
-        src="https://www.youtube.com/embed/PBr7hJ3HIus"
-        frameBorder="0"
-        allow="autoplay; encrypted-media"
-        allowFullScreen
-        autoPlay
-      />
-    </div>
-  );
-};
+import HeaderImage from '../../../static/assets/misc/Chauffeur_rose.jpg';
+
+class Header extends Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div className="header" ref="head">
+        <img
+          className="header-image"
+          src={HeaderImage}
+          alt="Suit Up for chauffeur travel"
+        />
+      </div>
+    );
+  }
+
+  componentWillUnmount() {}
+}
 
 export default Header;

@@ -1,13 +1,14 @@
 .toolbar-actions {
-    height: 100%;
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: flex-end;
-    align-items: center;
+  height: 100%;
 
-    .userlinks-container {
-        @media (max-width: 640px - 1) {
-            display: none;
-        }
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  align-items: center;
+
+  .userlinks-container {
+    @media (max-width: 640px - 1) {
+      display: none;
     }
+  }
 }

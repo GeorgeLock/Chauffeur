@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import Card from "react-md/lib/Cards/Card";
-import CardTitle from "react-md/lib/Cards/CardTitle";
-import Button from "react-md/lib/Buttons";
-import Avatar from "react-md/lib/Avatars";
-import CardText from "react-md/lib/Cards/CardText";
-import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
-import moment from "moment";
-import Media, { MediaOverlay } from "react-md/lib/Media";
-import PostTags from "../PostTags/PostTags";
-import PostCover from "../PostCover/PostCover";
-import config from "../../../data/SiteConfig";
-import "./PostPreview.scss";
+import React, { Component } from 'react';
+import Card from 'react-md/lib/Cards/Card';
+import CardTitle from 'react-md/lib/Cards/CardTitle';
+import Button from 'react-md/lib/Buttons';
+import Avatar from 'react-md/lib/Avatars';
+import CardText from 'react-md/lib/Cards/CardText';
+import FontIcon from 'react-md/lib/FontIcons';
+import Link from 'gatsby-link';
+import moment from 'moment';
+import Media, { MediaOverlay } from 'react-md/lib/Media';
+import PostTags from '../PostTags/PostTags';
+import PostCover from '../PostCover/PostCover';
+import config from '../../../data/SiteConfig';
+import './PostPreview.scss';
 
 class PostPreview extends Component {
   constructor(props) {
@@ -23,11 +23,11 @@ class PostPreview extends Component {
   }
   componentDidMount() {
     this.handleResize();
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
+    window.removeEventListener('resize', this.handleResize);
   }
 
   handleResize() {
@@ -45,8 +45,8 @@ class PostPreview extends Component {
     const coverHeight = mobile ? 162 : 225;
     return (
       <Card key={postInfo.path} raise className="md-grid md-cell md-cell--12">
-        <Link style={{ textDecoration: "none" }} to={postInfo.path}>
-          <Media style={{ height: coverHeight, paddingBottom: "0px" }}>
+        <Link style={{ textDecoration: 'none' }} to={postInfo.path}>
+          <Media style={{ height: coverHeight, paddingBottom: '0px' }}>
             <PostCover
               fileEdges={fileEdges}
               postNode={postInfo}

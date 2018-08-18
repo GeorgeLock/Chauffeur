@@ -1,22 +1,23 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import PostListing from '../components/PostListing/PostListing';
+
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
+import Home from '../components/Content/home';
 
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const fileEdges = this.props.data.allFile.edges;
     return (
-      <div className="index-container">
+      <div className="">
         <Helmet>
           <title>{config.siteTitle}</title>
           <link rel="canonical" href={`${config.siteUrl}`} />
         </Helmet>
 
         <SEO postEdges={postEdges} />
-        <PostListing postEdges={postEdges} fileEdges={fileEdges} />
+        <Home />
       </div>
     );
   }

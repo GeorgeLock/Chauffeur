@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'Chauffeur Travel', // Site title.
-  siteTitleShort: 'CT Bath', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitle: 'Chauffeur | Airport Transfers | Chauffeur Travel | Bath ', // Site title.
+  siteTitleShort: 'Chauffeur Travel', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Chauffeur Travel Bath', // Alternative site title for SEO.
   siteLogo: '/logos/Chauffeur_logo_cmyk.svg', // Logo used for SEO and manifest.
   siteUrl: 'https://vagr9k.github.io', // Domain of your website without pathPrefix.

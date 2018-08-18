@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-
+import ContactForm from '../components/Contact/ContactForm';
 import config from '../../data/SiteConfig';
 
-class VehiclesPage extends Component {
+class AboutPage extends Component {
   render() {
     return (
       <div className="about-container">
@@ -11,9 +11,10 @@ class VehiclesPage extends Component {
           <title>{`About | ${config.siteTitle}`}</title>
           <link rel="canonical" href={`${config.siteUrl}/about/`} />
         </Helmet>
+        <ContactForm />
       </div>
     );
   }
 }
 
-export default VehiclesPage;
+export default AboutPage;
