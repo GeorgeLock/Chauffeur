@@ -1,5 +1,5 @@
 import React from 'react';
-import './services.scss';
+import './Services.scss';
 
 import BusinessImage from '../../../static/assets/misc/Opening-Door.jpg';
 
