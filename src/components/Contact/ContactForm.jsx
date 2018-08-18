@@ -15,6 +15,12 @@ const ContactForm = () => {
             className="contact-form"
           >
             <div className="card border-primary">
+              <p class="hidden">
+                <label>
+                  Don’t fill this out if you're human:{' '}
+                  <input name="bot-field" />
+                </label>
+              </p>
               <div className="card-header p-0">
                 <div className="bg-primary text-white text-center py-2">
                   <h3>
