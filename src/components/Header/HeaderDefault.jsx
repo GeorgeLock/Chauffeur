@@ -3,12 +3,13 @@ import './Header.scss';
 import HeaderImage from '../../../static/assets/misc/Chauffeur_rose.jpg';
 
 class HeaderDefault extends Component {
-  render() {
-    const { localTitle } = this.props;
-
+  componentDidMount() {
     let top = '0';
     let scale;
     const content = document.getElementsByClassName('main-container');
+  }
+  render() {
+    const { localTitle } = this.props;
 
     if (localTitle === 'Home' || localTitle === 'home') {
       this.top = '0';
