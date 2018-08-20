@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Header.scss';
-import HeaderImage from '../../../static/assets/misc/Chauffeur_rose.jpg';
 
 class Header extends Component {
   constructor() {
@@ -8,18 +7,28 @@ class Header extends Component {
   }
 
   render() {
+    let className = 'header-image';
+    let leftPos = 0;
+    switch (this.props.localTitle) {
+      case 'Home':
+        className += ' home';
+        break;
+
+      case 'About':
+        className += ' about';
+
+        break;
+
+      default:
+        className += ' default';
+    }
+
     return (
-      <div className="header" ref="head">
-        <img
-          className="header-image"
-          src={HeaderImage}
-          alt="Suit Up for chauffeur travel"
-        />
+      <div className="header">
+        <div className={className} />
       </div>
     );
   }
-
-  componentWillUnmount() {}
 }
 
 export default Header;

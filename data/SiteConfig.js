@@ -34,7 +34,7 @@ module.exports = {
     },
     {
       label: 'LinkedIn',
-      url: '',
+      url: 'https://www.linkedin.com/company/chauffeur-travel',
       iconClassName: 'fab fa-linkedin-in'
     },
     {

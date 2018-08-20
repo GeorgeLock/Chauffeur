@@ -1,14 +1,21 @@
 #contact {
+  transition: all 0.5s ease-in;
   .border-primary {
     background: #1e1e1e;
     border: none !important;
+  }
+  .input-group {
+    width: 90%;
+    margin: 0 auto;
   }
   h3 {
     .fa-envelope {
       color: #fff !important;
     }
   }
-  .fa {
+  .fa,
+  .far,
+  .fas {
     color: #000 !important;
   }
   .bg-primary {
@@ -19,6 +26,10 @@
     margin: 0 auto;
     border-radius: 25px;
   }
-  .contact-form {
+  .form-check {
+    color: #fff;
+  }
+  .inline {
+    max-width: 50%;
   }
 }

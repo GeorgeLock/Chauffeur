@@ -23,6 +23,7 @@ class HeaderDefault extends Component {
     //     content[i].style.paddingTop = '10vh';
     //   }
     // }
+
     return (
       <div className="header">
         <img

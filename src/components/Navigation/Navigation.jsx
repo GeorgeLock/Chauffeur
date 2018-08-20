@@ -5,14 +5,14 @@ import ToolbarActions from '../ToolbarActions/ToolbarActions';
 import Footer from '../Footer/Footer';
 import GetNavList from './NavList';
 import Header from '../Header/Header';
-import HeaderDefault from '../Header/HeaderDefault';
 import './Navigation.scss';
+import TrioImage from '../../../static/assets/Trio/Trio_with_pillar.jpg';
 
 class Navigation extends Component {
   render() {
     const { children, config, LocalTitle } = this.props;
-    const footerLinks = LocalTitle !== 'About';
-    console.log(LocalTitle);
+    const footerLinks = LocalTitle;
+
     return (
       <NavigationDrawer
         drawerTitle={config.siteTitleAlt}
@@ -24,7 +24,8 @@ class Navigation extends Component {
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         toolbarActions={<ToolbarActions config={config} />}
       >
-        <HeaderDefault localTitle={LocalTitle} />
+        <Header localTitle={this.props.LocalTitle} />
+
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>

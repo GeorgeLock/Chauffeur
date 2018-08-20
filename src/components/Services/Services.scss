@@ -1,9 +1,12 @@
-.service-heading {
-  font-size: 2rem;
+.service-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 0 !important;
 }
+
 #services {
-  margin-bottom: 50px;
-}
-.padding-bottom--md {
-  padding-bottom: 65px;
+  a {
+    text-decoration: none;
+  }
 }

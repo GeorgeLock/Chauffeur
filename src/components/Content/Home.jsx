@@ -7,7 +7,7 @@ import BusinessImage from '../../../static/assets/misc/business.jpg';
 import AwardImage from '../../../static//logos/QSI-award.jpg';
 const Home = () => {
   return (
-    <div className="container text-sm-center">
+    <div className="container">
       <div className="row">
         <div className="col-md-12">
           <h2 className="page-heading text-center">

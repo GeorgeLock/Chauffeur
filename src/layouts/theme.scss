@@ -10,6 +10,7 @@ $md-tertiary-color: #fff;
 }
 
 .main-container {
+  padding-top: 96vh;
   transition: all 0.8s ease-in-out;
 }
 
@@ -21,4 +22,10 @@ $md-tertiary-color: #fff;
 a:link {
   color: $md-secondary-color;
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    padding-top: 65vh;
+  }
 }

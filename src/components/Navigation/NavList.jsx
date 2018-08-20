@@ -23,14 +23,13 @@ function GetNavList(config) {
       to: '/services/'
     },
     {
-      divider: true
-    },
-
-    {
       primaryText: 'Contact',
       leftIcon: <FontIcon>contact_mail</FontIcon>,
       component: Link,
       to: '/contact/'
+    },
+    {
+      divider: true
     }
   ];
 

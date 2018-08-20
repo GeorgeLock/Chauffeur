@@ -1,7 +1,22 @@
 .user-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: #fff;
+  }
+  a {
+    margin: 0 10px;
+  }
+}
+
+footer {
+  .user-links {
+    a {
+      min-width: 150px;
+      min-height: 40px;
+    }
+  }
 }
