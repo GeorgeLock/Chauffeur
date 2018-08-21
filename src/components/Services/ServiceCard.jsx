@@ -10,7 +10,7 @@ class ServiceCard extends Component {
     return (
       <Card
         raise
-        className="md-cell md-cell--3 md-cell--8-tablet md-cell--8-phone"
+        className="md-cell md-cell--4 md-cell--8-tablet md-cell--8-phone"
       >
         <Link className="category-link" to={this.props.LinkTo}>
           <Media>
