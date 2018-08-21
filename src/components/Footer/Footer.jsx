@@ -19,8 +19,8 @@ class Footer extends Component {
     const url = config.siteRss;
     const { userLinks } = this.props;
     const { copyright, fixedFooter } = config;
-    const ContactForm = null;
-    const Button = <Button/>
+    let ContactForm = null;
+    let Button = <Button/>
     if(this.state.showContact){
       ContactForm = <ContactForm />
       Button = null;
