@@ -29,7 +29,7 @@ class ContactForm extends Component {
     ) : null;
 
     return (
-      <div id="contact" className="container">
+      <div id="contact" className="container pt-5">
         <div className="row justify-content-center">
           <div className="col-12 col-md-8 col-lg-8 pb-5">
             <form
