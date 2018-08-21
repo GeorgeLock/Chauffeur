@@ -10,8 +10,11 @@ $md-tertiary-color: #fff;
 }
 
 .main-container {
-  padding-top: 96vh;
+  padding-top: 94vh;
   transition: all 0.8s ease-in-out;
+
+  .display-4 {
+  }
 }
 
 .main-container,
