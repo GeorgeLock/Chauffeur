@@ -39,6 +39,6 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}.md'
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Image', name: 'cover', widget: 'image' }
+      - { label: 'Cover Image', name: 'cover', widget: 'image' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
-      - { label: 'Quote', name: 'body', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
