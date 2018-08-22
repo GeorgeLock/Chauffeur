@@ -41,7 +41,17 @@ module.exports = {
       label: 'Email',
       url: 'mailto:enqueries@chauffeurtravel.co.uk',
       iconClassName: 'fas fa-envelope'
-    }
+    },
+    {
+      label: 'Home Phone',
+      url: 'tel:01225463404',
+      iconClassName: 'fas fa-phone'
+    },
+  {
+    label: 'Mobile Phone',
+    url: 'tel:07799730195',
+    iconClassName: 'fas fa-mobile-alt'
+  }
   ],
   copyright: 'Copyright © 2018. Chauffeur Travel', // Copyright string for the footer of the website and RSS feed.
   designedBy: 'George Lock'

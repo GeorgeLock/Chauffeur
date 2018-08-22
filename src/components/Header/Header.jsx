@@ -4,28 +4,28 @@ import './Header.scss';
 class Header extends Component {
   constructor() {
     super();
+    this.state = {className: 'header-image default'};
   }
 
   render() {
-    let className = 'header-image';
-    let leftPos = 0;
+   
     switch (this.props.localTitle) {
       case 'Home':
-        className += ' home';
+        this.state.className = 'header-image home';
         break;
 
       case 'About':
-        className += ' about';
+        this.state.className = 'header-image about';
 
         break;
 
       default:
-        className += ' default';
+        this.state.className = 'header-image default';
     }
 
     return (
       <div className="header">
-        <div className={className} />
+        <div className={this.state.className} />
       </div>
     );
   }
