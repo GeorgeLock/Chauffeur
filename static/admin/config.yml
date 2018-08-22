@@ -31,3 +31,14 @@ collections:
       - { label: 'Cover Image', name: 'cover', widget: 'image' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  
+  - name: testimonials
+    label: 'Testimonials'
+    folder: 'vehicles'
+    create: true
+    slug: '{{year}}--{{month}}--{{day}}--{{slug}}.md'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Cover Image', name: 'cover', widget: 'image' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown'}
