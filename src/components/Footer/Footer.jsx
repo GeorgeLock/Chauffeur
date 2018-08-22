@@ -4,7 +4,7 @@ import UserLinks from '../UserLinks/UserLinks';
 import config from '../../../data/SiteConfig';
 import './Footer.scss';
 import ContactForm from '../Contact/ContactForm';
-
+import ServicesBox from '../Services/ServicesBox';
 class Footer extends Component {
   constructor(){
     super();
@@ -21,13 +21,19 @@ class Footer extends Component {
       return null;
     }
     return (
+      <div>
+        <div className="container md-grid">
+        <ServicesBox />
+        </div>
       <footer className={fixedFooter ? 'footer footer-fixed' : 'footer'}>
+        
         {userLinks ? <UserLinks config={config} labeled /> : null}
         <div className="notice-container container md-grid">
            
           <div className="rss" />
         </div>
       </footer>
+      </div>
     );
   }
 }
