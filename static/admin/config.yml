@@ -32,12 +32,13 @@ collections:
       - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-    - name: testimonials
-      label: 'Testimonials'
-      folder: 'testimonials'
-      create: true
-      slug: '{{year}}-{{month}}-{{day}}-{{slug}}.md'
-      fields:
-        - { label: 'Name', name: 'name', widget: 'string' }
-        - { label: 'Image', name: 'image', widget: 'image' }
-        - { label: 'Quote', name: 'quote', widget: 'markdown' }
+  - name: testimonials
+    label: 'Testimonials'
+    folder: 'testimonials'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}.md'
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Quote', name: 'quote', widget: 'markdown' }
