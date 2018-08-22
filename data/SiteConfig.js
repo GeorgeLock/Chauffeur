@@ -43,12 +43,12 @@ module.exports = {
       iconClassName: 'fas fa-envelope'
     },
     {
-      label: 'Home Phone',
+      label: '01225 463404',
       url: 'tel:01225463404',
       iconClassName: 'fas fa-phone'
     },
   {
-    label: 'Mobile Phone',
+    label: '07799730195',
     url: 'tel:07799730195',
     iconClassName: 'fas fa-mobile-alt'
   }

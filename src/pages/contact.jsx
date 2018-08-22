@@ -12,6 +12,7 @@ class AboutPage extends Component {
           <link rel="canonical" href={`${config.siteUrl}/about/`} />
         </Helmet>
         <ContactForm />
+       
       </div>
     );
   }

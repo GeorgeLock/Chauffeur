@@ -44,7 +44,7 @@ class ContactForm extends Component {
               <div className="card border-primary">
                 <div className="card-header p-0">
                   <div className="bg-primary text-white text-center py-2">
-                    <h3>
+                    <h3 className="text-white">
                       <i className="fa fa-envelope" /> Request a Quote
                     </h3>
                   </div>
@@ -86,25 +86,25 @@ class ContactForm extends Component {
                       fieldName="Number of passengers"
                       type="number"
                       id="passengers"
-                      placeholder="Home / Mobile"
+                      placeholder="1"
                       className="pr-2 fas fa-phone text-info"
                       required
                     />
                   </div>
                   <div className="form-group">
                     <Label
-                      fieldName="Number of passengers"
+                      fieldName="Date of Travel"
                       type="date"
                       id="passengers"
-                      placeholder="Home / Mobile"
+                      placeholder=""
                       className="pr-2 fas fa-phone text-info"
                       required
                     />
                     <Label
-                      fieldName="Number of passengers"
+                      fieldName="Time of Travel"
                       type="time"
                       id="passengers"
-                      placeholder="Home / Mobile"
+                      placeholder=""
                       className="pr-2 fas fa-phone text-info"
                       required
                     />
