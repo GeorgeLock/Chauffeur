@@ -1,5 +1,5 @@
 import React from 'react';
-import ServicesBox from '../Services/ServicesBox';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 import './default.scss';
 import '../../layouts/animations.css';
@@ -100,7 +100,7 @@ const Home = () => {
           </div>
         </div>
 
-        <ServicesBox />
+       
       </div>
     </div>
   );

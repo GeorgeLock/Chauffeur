@@ -5,16 +5,28 @@ import Link from 'gatsby-link';
 function GetNavList(config) {
   const NavList = [
     {
+      primaryText: 'About',
+      subheader: true
+    },
+    {
       primaryText: 'Home',
       leftIcon: <FontIcon>home</FontIcon>,
       component: Link,
       to: '/'
     },
     {
-      primaryText: 'About',
+      primaryText: 'Testimonials',
       leftIcon: <FontIcon>person</FontIcon>,
       component: Link,
-      to: '/about/'
+      to: '/testimonials/'
+    },
+    
+    {
+      divider: true
+    },
+    {
+      primaryText: 'Services',
+      subheader: true
     },
     {
       primaryText: 'Services',
@@ -22,15 +34,19 @@ function GetNavList(config) {
       component: Link,
       to: '/services/'
     },
+
+  {
+    divider: true
+  },
+    {subheader: true,
+    primaryText: 'Contact'},
     {
       primaryText: 'Contact',
       leftIcon: <FontIcon>contact_mail</FontIcon>,
       component: Link,
       to: '/contact/'
     },
-    {
-      divider: true
-    }
+
   ];
 
   if (config.userLinks) {
