@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import ContactForm from '../components/Contact/ContactForm';
+import Business from '../components/Content/Business'
 import config from '../../data/SiteConfig';
 
 class BusinessPage extends Component {
@@ -8,10 +8,10 @@ class BusinessPage extends Component {
     return (
       <div className="about-container">
         <Helmet>
-          <title>{`About | ${config.siteTitle}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}/about/`} />
+          <title>{`Business | ${config.siteTitle}`}</title>
+          <link rel="canonical" href={`${config.siteUrl}/business/`} />
         </Helmet>
-        <ContactForm />
+        <Business />
        
       </div>
     );

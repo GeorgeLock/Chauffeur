@@ -6,7 +6,6 @@ import Footer from '../Footer/Footer';
 import GetNavList from './NavList';
 import Header from '../Header/Header';
 import './Navigation.scss';
-import TrioImage from '../../../static/assets/Trio/Trio_with_pillar.jpg';
 
 class Navigation extends Component {
   render() {

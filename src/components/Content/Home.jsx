@@ -10,7 +10,7 @@ const Home = () => {
     <div className="container text-sm-center text-md-left">
       <div className="row">
         <div className="col-md-12">
-          <h2 className="display-3 text-center">Welcome to Chauffeur Travel</h2>
+          <h1 className="display-3 text-center">Welcome to Chauffeur Travel</h1>
         </div>
 
         <div className="content-main">
@@ -24,7 +24,7 @@ const Home = () => {
             </div>
             <div className="col-lg-7">
               <ScrollAnimation animateIn="bounceInRight" animateOnce>
-                <h3 className="display-4">Reliable Chauffeur Travel</h3>
+                <h2 className="display-4">Reliable Chauffeur Travel</h2>
 
                 <p className="md-caption">
                   Chauffeur Travel specialise in chauffeur driven car hire for
@@ -52,7 +52,7 @@ const Home = () => {
         <div className="content-aside">
           <div className="row">
             <div className="col-md-8">
-              <h3 className="display-4">Professional Driver QSi Awards 2017</h3>
+              <h2 className="display-4">Professional Driver QSi Awards 2017</h2>
               <p className="md-caption">
                 Bath-based chauffeur company has won a prestigious award in the
                 UK’s only national awards for the private hire, taxi and

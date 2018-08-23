@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import ContactForm from '../components/Contact/ContactForm';
 import config from '../../data/SiteConfig';
 
-class StudentPage extends Component {
+class StudentsPage extends Component {
   render() {
     return (
       <div className="about-container">
@@ -18,4 +18,4 @@ class StudentPage extends Component {
   }
 }
 
-export default StudentPage;
+export default StudentsPage;

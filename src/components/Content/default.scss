@@ -2,7 +2,7 @@
   text-align: center;
   font-size: 2.2rem;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -26,7 +26,14 @@
   padding-bottom: 10px;
 }
 
+ul {
+  list-style-type: none;
 
+  padding: 0 5px;
+  li {
+    font-weight: 300;
+  }
+}
 
 .md-caption {
   font-size: 1.1rem;

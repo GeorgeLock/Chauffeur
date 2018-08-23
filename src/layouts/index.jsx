@@ -28,8 +28,17 @@ export default class MainLayout extends React.Component {
       title = 'Categories';
     } else if (currentPath === 'about/') {
       title = 'About';
-    } else if (currentPath === 'services/') {
-      title = 'Services';
+    } else if (currentPath === 'business/') {
+      title = 'Business';
+    }
+    else if (currentPath === 'airports/') {
+      title = 'Airports';
+    }
+    else if (currentPath === 'events/') {
+      title = 'Events';
+    }
+    else if (currentPath === 'weddings/') {
+      title = 'Weddings';
     }
     else if (currentPath === 'contact/'){
       title = 'Contact';
