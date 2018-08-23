@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Cell, Button } from "react-md";
 import "./default.scss";
+import ContactButtons from "../Contact/ContactButtons";
 
 import Horstman from "../../../static/logos/Horstman-Group-Logo-web.jpg";
 import Novia from "../../../static/logos/Novia_Financial_plc.jpg";
@@ -8,7 +9,6 @@ import SJGB from "../../../static/logos/SJGB_Logo_signature.jpg";
 import Unividual from "../../../static/logos/Unividual.jpg";
 import AbbeyHotel from "../../../static/logos/ABBEY-HOTEL-LOGO-BLACK.jpg";
 import ApsleyHouse from "../../../static/logos/ApsleyHouse.jpg";
-import Dukes from "../../../static/logos/Dukes.png";
 import Forward from "../../../static/logos/Forward-goyourownway.jpg";
 
 const Business = () => {
@@ -76,25 +76,7 @@ const Business = () => {
               <li>Competitive Rates</li>
             </ul>
             <Cell className="mt-5" size={12} tabletSize={12}>
-              <Button raised primary iconClassName="fas fa-user">
-                Open an Account
-              </Button>
-              <Button
-                className="mr-3 ml-3"
-                raised
-                primary
-                iconClassName="fas fa-taxi"
-              >
-                Make a Booking
-              </Button>
-              <Button
-                raised
-                href="/contact"
-                primary
-                iconClassName="fas fa-envelope-open"
-              >
-                Request a Quote
-              </Button>
+              <ContactButtons />
             </Cell>
           </Cell>
           <Cell size={5} tabletSize={12}>

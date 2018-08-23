@@ -35,6 +35,37 @@ ul {
   }
 }
 
+.subheading {
+  font-size: 1.6rem;
+}
+
+#testimonials {
+  p {
+    font-weight: 300;
+    color: #555;
+    font-style: italic;
+    margin: auto;
+  }
+  .md-card-title {
+    min-height: 50px;
+    max-height: 50px;
+  }
+  .md-card-title--title {
+    font-weight: 300;
+  }
+  .md-card {
+    min-height: 100%;
+  }
+  .img-logo {
+    max-width: 150px;
+    max-height: 59px;
+  }
+  .md-avatar {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .md-caption {
   font-size: 1.1rem;
   color: #555;
