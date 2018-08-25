@@ -1,14 +1,14 @@
 /* eslint import/no-unresolved:"off" */
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
-import React from 'react';
-import favicon from './favicon.png';
+import React from "react";
+import favicon from "./favicon.png";
 
-let inlinedStyles = '';
-if (process.env.NODE_ENV === 'production') {
+let inlinedStyles = "";
+if (process.env.NODE_ENV === "production") {
   try {
     /* eslint import/no-webpack-loader-syntax: off */
-    inlinedStyles = require('!raw-loader!../public/styles.css');
+    inlinedStyles = require("!raw-loader!../public/styles.css");
   } catch (e) {
     /* eslint no-console: "off" */
     console.log(e);
@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'production') {
 export default class HTML extends React.Component {
   render() {
     let css;
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === "production") {
       css = (
         <style
           id="gatsby-inlined-css"
@@ -36,6 +36,17 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            charset="UTF-8"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
           {css}
         </head>
         <body>

@@ -60,7 +60,11 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <Navigation config={config} LocalTitle={this.getLocalTitle()}>
+      <Navigation
+        testimonialEdges={this.props.data.allMarkdownRemark.edges}
+        config={config}
+        LocalTitle={this.getLocalTitle()}
+      >
         <div>
           <Helmet>
             <meta name="description" content={config.siteDescription} />
@@ -71,11 +75,35 @@ export default class MainLayout extends React.Component {
               integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
               crossorigin="anonymous"
             />
-            <Header />
           </Helmet>
+
           {children()}
         </div>
       </Navigation>
     );
   }
 }
+
+export const pageQuery = graphql`
+
+  query TestimonialsMain{
+
+      allMarkdownRemark( sort: { order: DESC, fields: [frontmatter___date]},
+          filter: {fileAbsolutePath: {regex: "../(testimonials)/.*\\.md$/"}}){
+            edges{
+             
+          node{
+            html
+            id
+            frontmatter{
+              title
+              cover
+            }
+            excerpt
+          }
+         
+        }
+      }
+   
+    }
+`;

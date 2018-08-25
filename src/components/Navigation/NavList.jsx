@@ -67,7 +67,7 @@ function GetNavList(config) {
       primaryText: "Contact"
     },
     {
-      primaryText: "Contact",
+      primaryText: "Enquiry",
       leftIcon: <FontIcon>mail_outline</FontIcon>,
       component: Link,
       to: "/contact/"

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-material",
-  "description": "GatsbyJS Material Blog theme.",
-  "version": "1.1.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "name": "chauffeur-travel-md",
+  "description": "Chauffeur Travel Bath modernised website",
+  "version": "1.0",
+  "author": "George Lock <lockgeorge.web.design@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^1.5.0",
     "babel-plugin-lodash": "^3.3.2",
@@ -46,7 +46,9 @@
     "react-helmet": "^5.2.0",
     "react-md": "^1.2.9",
     "react-share": "^2.1.0",
+    "react-slick": "^0.23.1",
     "react-twitter-widgets": "^1.7.1",
+    "slick-carousel": "^1.8.1",
     "url-join": "^4.0.0",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"

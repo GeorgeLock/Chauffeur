@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import ScrollAnimation from 'react-animate-on-scroll';
-import './default.scss';
-import '../../layouts/animations.css';
-import BusinessImage from '../../../static/assets/misc/business.jpg';
-import AwardImage from '../../../static//logos/QSI-award.jpg';
+import ScrollAnimation from "react-animate-on-scroll";
+import "./default.scss";
+import "../../layouts/animations.css";
+import BusinessImage from "../../../static/assets/misc/business.jpg";
+import AwardImage from "../../../static//logos/QSI-award.jpg";
 const Home = () => {
   return (
     <div className="container text-sm-center text-md-left">
@@ -99,8 +99,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-       
       </div>
     </div>
   );

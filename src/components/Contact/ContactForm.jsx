@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import Label from './Label';
+import React, { Component } from "react";
+import Label from "./Label";
+import { TextField } from "react-md";
 
-import './bootstrap.min.css';
-import './ContactForm.scss';
+import "./bootstrap.min.css";
+import "./ContactForm.scss";
 
 class ContactForm extends Component {
   constructor() {
@@ -30,107 +31,36 @@ class ContactForm extends Component {
 
     return (
       <div id="contact" className="container pt-5">
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-8 col-lg-8 pb-5">
-            <form
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              action="#"
-              className="contact-form"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="card border-primary">
-                <div className="card-header p-0">
-                  <div className="bg-primary text-white text-center py-2">
-                    <h3 className="text-white">
-                      <i className="fa fa-envelope" /> Request a Quote
-                    </h3>
-                  </div>
-                </div>
-                <div className="card-body p-4">
-                  <div className="form-group">
-                    <Label
-                      fieldName="Passenger Name"
-                      type="text"
-                      id="name"
-                      placeholder="John Doe"
-                      className="pr-2 fas fa-user text-info"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <Label
-                      fieldName="Email"
-                      type="email"
-                      id="email"
-                      placeholder="example@example.com"
-                      className="pr-2 fas fa-envelope-open text-info"
-                      required
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <Label
-                      fieldName="Phone"
-                      type="tel"
-                      id="phone"
-                      placeholder="Home / Mobile"
-                      className="pr-2 fas fa-phone text-info"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <Label
-                      fieldName="Number of passengers"
-                      type="number"
-                      id="passengers"
-                      placeholder="1"
-                      className="pr-2 fas fa-phone text-info"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <Label
-                      fieldName="Date of Travel"
-                      type="date"
-                      id="passengers"
-                      placeholder=""
-                      className="pr-2 fas fa-phone text-info"
-                      required
-                    />
-                    <Label
-                      fieldName="Time of Travel"
-                      type="time"
-                      id="passengers"
-                      placeholder=""
-                      className="pr-2 fas fa-phone text-info"
-                      required
-                    />
-                  </div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      checked={this.state.checked}
-                      onChange={this.handleChange}
-                    />
-                    <label>Flight</label>
-                  </div>
-                  <div className="form-group">{content}</div>
-                  <div className="text-center">
-                    <input
-                      type="submit"
-                      value="Submit"
-                      className="btn btn-primary btn-lg rounded-2 py-2"
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <div className="md-grid">
+            <TextField
+              id="floating-center-title"
+              label="Title"
+              lineDirection="center"
+              placeholder="Hello World"
+              className="md-cell md-cell--bottom"
+            />
+            <TextField
+              id="floating-multiline"
+              label="Type many letters"
+              lineDirection="right"
+              rows={2}
+              placeholder="Hello World"
+              className="md-cell md-cell--bottom"
+            />
+            <TextField
+              id="floating-password"
+              label="Enter your password"
+              type="password"
+              className="md-cell md-cell--bottom"
+            />
           </div>
-        </div>
+        </form>
       </div>
     );
   }
