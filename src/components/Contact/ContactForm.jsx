@@ -29,47 +29,45 @@ class ContactForm extends Component {
       : null;
 
     return (
-      <div id="contact" className="container pt-5">
-        <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
-          <div className="md-grid">
-            <p class="hidden">
-              <label>
-                Don’t fill this out if you're human: <input name="bot-field" />
-              </label>
-            </p>
+      <form
+        name="contact"
+        method="post"
+        data-netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <div className="md-grid">
+          <p class="hidden">
+            <label>
+              <input type="hidden" name="bot-field" />
+            </label>
+          </p>
 
-            <TextField
-              id="floating-center-title"
-              label="Title"
-              lineDirection="center"
-              placeholder="Hello World"
-              className="md-cell md-cell--bottom"
-            />
-            <TextField
-              id="floating-multiline"
-              label="Type many letters"
-              lineDirection="right"
-              rows={2}
-              placeholder="Hello World"
-              className="md-cell md-cell--bottom"
-            />
-            <TextField
-              id="floating-multiline"
-              label="Enter your password"
-              type="number"
-              className="md-cell md-cell--bottom"
-            />
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
+          <TextField
+            id="floating-center-title"
+            label="Title"
+            lineDirection="center"
+            placeholder="Hello World"
+            className="md-cell md-cell--bottom"
+          />
+          <TextField
+            id="floating-multiline"
+            label="Type many letters"
+            lineDirection="right"
+            rows={2}
+            placeholder="Hello World"
+            className="md-cell md-cell--bottom"
+          />
+          <TextField
+            id="floating-multiline"
+            label="Enter your password"
+            type="number"
+            className="md-cell md-cell--bottom"
+          />
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
     );
   }
 }
 
 export default ContactForm;
-{
-  /* <form
-
-> */
-}
