@@ -30,8 +30,8 @@ class ContactForm extends Component {
 
     return (
       <form
-        name="contact"
-        method="post"
+        name="contact-form"
+        method="#"
         data-netlify-honeypot="bot-field"
         data-netlify="true"
       >
@@ -48,20 +48,24 @@ class ContactForm extends Component {
             lineDirection="center"
             placeholder="Hello World"
             className="md-cell md-cell--bottom"
+            name="Name"
           />
           <TextField
             id="floating-multiline"
-            label="Type many letters"
+            label="Email"
             lineDirection="right"
-            rows={2}
-            placeholder="Hello World"
+            placeholder="example@example.com"
             className="md-cell md-cell--bottom"
+            name="Email"
+            type="email"
           />
           <TextField
             id="floating-multiline"
-            label="Enter your password"
+            label="Number of Passengers"
             type="number"
             className="md-cell md-cell--bottom"
+            name="Number of Passengers"
+            placeholder="1"
           />
           <input type="submit" value="Submit" />
         </div>
