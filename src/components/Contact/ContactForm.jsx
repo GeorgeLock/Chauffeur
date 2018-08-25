@@ -37,6 +37,11 @@ class ContactForm extends Component {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
           <div className="md-grid">
             <TextField
               id="floating-center-title"
