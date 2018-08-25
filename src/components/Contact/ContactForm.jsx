@@ -54,9 +54,9 @@ class ContactForm extends Component {
               className="md-cell md-cell--bottom"
             />
             <TextField
-              id="floating-password"
+              id="floating-multiline"
               label="Enter your password"
-              type="password"
+              type="number"
               className="md-cell md-cell--bottom"
             />
           </div>
