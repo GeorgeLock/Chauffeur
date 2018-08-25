@@ -60,6 +60,7 @@ class ContactForm extends Component {
               className="md-cell md-cell--bottom"
             />
           </div>
+          <input type="submit" name="Send" />
         </form>
       </div>
     );
