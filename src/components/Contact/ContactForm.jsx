@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Label from "./Label";
-import { TextField } from "react-md";
+
 import "./bootstrap.min.css";
 import "./ContactForm.scss";
 
@@ -29,27 +29,35 @@ class ContactForm extends Component {
     ) : null;
 
     return (
-      <div id="contact">
-        <form
-          name="contact-form"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="#"
-          className="contact-form"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <div className="md-grid">
-            <TextField
-              id="floating-center-title"
-              label="Passenger Name"
-              lineDirection="center"
-              placeholder="John Doe"
-              name="Name"
-              className="md-cell md-cell--bottom"
-            />
+      <div id="contact" className="container pt-5">
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-8 col-lg-8 pb-5">
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="#"
+              className="contact-form"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <TextField
+                id="floating-center-title"
+                label="Name"
+                lineDirection="center"
+                name="Passenger Name"
+                placeholder="John Doe"
+                className="md-cell md-cell--bottom"
+              />
+
+              <input
+                type="submit"
+                value="Submit"
+                className="btn btn-primary btn-lg rounded-2 py-2"
+              />
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     );
   }
