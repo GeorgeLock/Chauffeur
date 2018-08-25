@@ -31,7 +31,7 @@ class ContactForm extends Component {
     return (
       <form
         name="contact-form"
-        method="post"
+        method="POST"
         action="#"
         data-netlify-honeypot="bot-field"
         data-netlify="true"
@@ -40,6 +40,25 @@ class ContactForm extends Component {
           <p class="hidden">
             <label>
               <input type="hidden" name="bot-field" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Role:{" "}
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message" />
             </label>
           </p>
 

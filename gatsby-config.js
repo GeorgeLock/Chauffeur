@@ -39,6 +39,9 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-netlify-cache"
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "testimonials",
