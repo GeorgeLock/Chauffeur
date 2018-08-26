@@ -8,8 +8,8 @@ class AboutPage extends Component {
     return (
       <div className="about-container">
         <Helmet>
-          <title>{`About | ${config.siteTitle}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}/about/`} />
+          <title>{`Contact | ${config.siteTitle}`}</title>
+          <link rel="canonical" href={`${config.siteUrl}/contact/`} />
         </Helmet>
         <h1 className="display-3 text-center">Contact</h1>
         <ContactForm />
