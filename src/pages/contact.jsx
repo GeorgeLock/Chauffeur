@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Helmet from 'react-helmet';
-import ContactForm from '../components/Contact/ContactForm';
-import config from '../../data/SiteConfig';
+import React, { Component } from "react";
+import Helmet from "react-helmet";
+import ContactForm from "../components/Contact/ContactForm";
+import config from "../../data/SiteConfig";
 
 class AboutPage extends Component {
   render() {
@@ -11,8 +11,8 @@ class AboutPage extends Component {
           <title>{`About | ${config.siteTitle}`}</title>
           <link rel="canonical" href={`${config.siteUrl}/about/`} />
         </Helmet>
+        <h1 className="display-3 text-center">Contact</h1>
         <ContactForm />
-       
       </div>
     );
   }
