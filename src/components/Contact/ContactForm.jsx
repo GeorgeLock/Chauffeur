@@ -93,6 +93,7 @@ class ContactForm extends Component {
               className="md-cell md-cell--bottom"
               errorText="Please enter your full name"
               required
+              type="text"
             />
 
             <TextField
@@ -109,7 +110,7 @@ class ContactForm extends Component {
 
             <TextField
               required
-              id="floating-center-title"
+              id="email"
               label="Email"
               type="email"
               lineDirection="center"
@@ -119,7 +120,7 @@ class ContactForm extends Component {
               errorText="Please enter a valid email address"
             />
             <TextField
-              id="floating-center-title"
+              id="Contact-Number"
               label="Phone"
               type="tel"
               lineDirection="center"
@@ -145,7 +146,7 @@ class ContactForm extends Component {
               required
             />
             <TextField
-              id="floating-center-title"
+              id="pickup-location"
               label="Pickup Location"
               lineDirection="center"
               name="Pickup Location"
@@ -156,7 +157,7 @@ class ContactForm extends Component {
             />
 
             <TextField
-              id="floating-center-title"
+              id="extra-pickup-location"
               label="Extra Pickup Location"
               lineDirection="center"
               name="Extra Pickup Location"
@@ -165,7 +166,7 @@ class ContactForm extends Component {
               className="md-cell md-cell--bottom"
             />
             <TextField
-              id="floating-center-title"
+              id="amount-of-luggage"
               label="Amount of Luggage"
               lineDirection="center"
               name="Pickup Location"
