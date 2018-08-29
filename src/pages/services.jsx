@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const ServicesPage = () => {
   return (
     <div>
-      <h2>Services</h2>
+      <h2 className="display-4">Student Chaperone Services</h2>
     </div>
   );
 };

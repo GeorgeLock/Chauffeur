@@ -23,7 +23,7 @@ const TestimonialsPage = ({ data }) => {
         <title>{`Testimonials | ${config.siteTitle}`}</title>
         <link rel="canonical" href={`${config.siteUrl}/testimonials/`} />
       </Helmet>
-      <h1 className="display-3 text-center">Testimonials</h1>
+      <h1 className="display-3 text-center page-heading">Testimonials</h1>
       <Grid>
         {data.allMarkdownRemark.edges.map(testimonial => (
           <Cell size={6} tabletSize={4} key={testimonial.node.id}>

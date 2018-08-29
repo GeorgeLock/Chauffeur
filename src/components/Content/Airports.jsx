@@ -6,10 +6,10 @@ import "../../layouts/animations.css";
 const AirportsPage = () => {
   return (
     <div className="container text-sm-center text-md-left">
-      <h1 className="display-3 text-center">Airports</h1>
+      <h1 className="display-3 text-center page-heading">Airports</h1>
       <Grid>
-        <Cell size={12} className="text-center">
-          <h2 className="display-4">Airport Transfers</h2>
+        <Cell size={8} className="text-center">
+          <h2 className="display-4 page-subheading">Airport Transfers</h2>
           <p className="md-caption">
             Chauffeur Travel's transfer service provides, friendly, reliable and
             professional transport to all UK Airports such as Bristol, Exeter,

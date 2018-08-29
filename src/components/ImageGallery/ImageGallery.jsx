@@ -4,6 +4,8 @@ import Img from "gatsby-image";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import "./Gallery.scss";
 
+import Trio from "../../../static/assets/Trio/Trio_with_pillar.jpg";
+
 class ImageGallerys extends React.Component {
   constructor() {
     super();
@@ -30,10 +32,11 @@ class ImageGallerys extends React.Component {
         break;
 
       default:
+        console.log(Trio);
         images = [
           {
-            original: "https://picsum.photos/200/300",
-            thumbnail: "http://lorempixel.com/250/150/nature/1/"
+            original: Trio,
+            thumbnail: Trio
           },
           {
             original: "http://lorempixel.com/1000/600/nature/2/",
@@ -47,14 +50,7 @@ class ImageGallerys extends React.Component {
         break;
     }
 
-    return (
-      <ImageGallery
-        className=""
-        items={images}
-        infinite
-        showFullScreenButton={true}
-      />
-    );
+    return <ImageGallery items={images} infinite showFullScreenButton={true} />;
   }
 }
 

@@ -1,6 +1,4 @@
 import React from "react";
-
-import ScrollAnimation from "react-animate-on-scroll";
 import "./default.scss";
 import "../../layouts/animations.css";
 import BusinessImage from "../../../static/assets/misc/business.jpg";
@@ -10,7 +8,9 @@ const Home = () => {
     <div className="container text-sm-center text-md-left">
       <div className="row">
         <div className="col-md-12">
-          <h1 className="display-3 text-center">Welcome to Chauffeur Travel</h1>
+          <h1 className="display-3 text-center page-heading">
+            Welcome to Chauffeur Travel
+          </h1>
         </div>
 
         <div className="content-main">
@@ -23,36 +23,38 @@ const Home = () => {
               />
             </div>
             <div className="col-lg-7">
-              <ScrollAnimation animateIn="bounceInRight" animateOnce>
-                <h2 className="display-4">Reliable Chauffeur Travel</h2>
+              <h2 className="display-4 page-subheading">
+                Reliable Chauffeur Travel
+              </h2>
 
-                <p className="md-caption">
-                  Chauffeur Travel specialise in chauffeur driven car hire for
-                  businesses, music tours, VIP events, weddings, special
-                  occasions and airport transfers.<br />
-                  <br /> Priding ourselves in excellence, our fleet of
-                  Mercedes-Benz executive vehicles are immaculate and our highly
-                  trained, charcoal suited chauffeurs offer safe, reliable
-                  travel to anywhere in the UK.
-                  <br />
-                  <br />
-                  We also offer optional extras, such as a newspaper of your
-                  choice, gourmet sandwiches or even a glass of wine to help you
-                  relax on your journey.<br />
-                  <br />
-                  <strong>
-                    We don't just drive you to your destination but we provide a
-                    luxurious experience as well.
-                  </strong>
-                </p>
-              </ScrollAnimation>
+              <p className="md-caption">
+                Chauffeur Travel specialise in chauffeur driven car hire for
+                businesses, music tours, VIP events, weddings, special occasions
+                and airport transfers.<br />
+                <br /> Priding ourselves in excellence, our fleet of
+                Mercedes-Benz executive vehicles are immaculate and our highly
+                trained, charcoal suited chauffeurs offer safe, reliable travel
+                to anywhere in the UK.
+                <br />
+                <br />
+                We also offer optional extras, such as a newspaper of your
+                choice, gourmet sandwiches or even a glass of wine to help you
+                relax on your journey.<br />
+                <br />
+                <strong>
+                  We don't just drive you to your destination but we provide a
+                  luxurious experience as well.
+                </strong>
+              </p>
             </div>
           </div>
         </div>
         <div className="content-aside">
           <div className="row">
             <div className="col-md-8">
-              <h2 className="display-4">Professional Driver QSi Awards 2017</h2>
+              <h2 className="display-4 page-subheading">
+                Professional Driver QSi Awards 2017
+              </h2>
               <p className="md-caption">
                 Bath-based chauffeur company has won a prestigious award in the
                 UK’s only national awards for the private hire, taxi and

@@ -14,7 +14,7 @@ import Forward from "../../../static/logos/Forward-goyourownway.jpg";
 const Business = () => {
   return (
     <div className="container text-sm-center text-md-left">
-      <h1 className="display-3 text-center">Business</h1>
+      <h1 className="display-3 text-center page-heading">Business</h1>
       <Grid className="">
         <Cell size={12}>
           <p className="md-caption text-center">
