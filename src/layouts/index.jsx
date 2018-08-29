@@ -75,7 +75,6 @@ export default class MainLayout extends React.Component {
               integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
               crossorigin="anonymous"
             />
-            <script src="https://maps.googleapis.com/maps/api/js?&v=3.exp&libraries=geometry,drawing,places" />
           </Helmet>
 
           {children()}

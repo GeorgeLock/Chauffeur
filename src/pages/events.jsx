@@ -12,9 +12,10 @@ class EventsPage extends Component {
           <title>{`About | ${config.siteTitle}`}</title>
           <link rel="canonical" href={`${config.siteUrl}/about/`} />
         </Helmet>
-        <h1 className="display-4 text-center">Events</h1>
+        <h1 className="display-3 text-center">Events</h1>
         <Grid>
           <Cell size={6} desktopOffset={3}>
+            <h2 className="display-4">Ticketmaster Events</h2>
             <LocalEvents />
           </Cell>
         </Grid>

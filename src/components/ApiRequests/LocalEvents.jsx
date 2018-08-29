@@ -34,14 +34,14 @@ class LocalEvents extends React.Component {
 
   render() {
     const settings = {
-      dots: false,
-      arrows: true,
+      dots: true,
+      arrows: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       speed: 1000,
-      autoplaySpeed: 15000
+      autoplaySpeed: 8500
     };
     return (
       <div className="event-container">
@@ -65,7 +65,13 @@ class LocalEvents extends React.Component {
                         .reverse()
                         .join("-")}
                     </h2>
-                    <Button href={event.url} raised primary target="_blank">
+                    <Button
+                      className="ml-4"
+                      href={event.url}
+                      raised
+                      primary
+                      target="_blank"
+                    >
                       View Event
                     </Button>
                     <Button

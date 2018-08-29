@@ -1,0 +1,17 @@
+.img-gallery {
+  overflow: hidden;
+  .image-gallery-swipe {
+    .image-gallery-slides {
+      max-height: 60%;
+      .image-gallery-slide {
+        .image-gallery-image {
+          img {
+            max-width: 20%;
+            max-height: 20%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
