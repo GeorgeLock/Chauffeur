@@ -15,7 +15,7 @@ class EventsPage extends Component {
         <h1 className="display-3 text-center page-heading">Events</h1>
         <Grid>
           <Cell size={6} desktopOffset={3}>
-            <h2 className="display-4">Ticketmaster Events</h2>
+            <h2 className="display-4 page-subheading">Ticketmaster Events</h2>
             <LocalEvents />
           </Cell>
         </Grid>

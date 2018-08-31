@@ -33,7 +33,9 @@ const Business = () => {
       <div className="content-main">
         <Grid>
           <Cell size={7} phoneSize={12} tabletSize={12}>
-            <h2 className="display-4">Our new booking system</h2>
+            <h2 className="display-4 page-subheading">
+              Our new booking system
+            </h2>
             <ul className="md-caption">
               <li>Local Office Base – Member of Staff at office to assist.</li>
               <br />
@@ -80,7 +82,7 @@ const Business = () => {
             </Cell>
           </Cell>
           <Cell size={5} tabletSize={12}>
-            <h2 className="display-4">Some of our Clients</h2>
+            <h2 className="display-4 page-subheading">Some of our Clients</h2>
             <Cell size={12}>
               <img
                 className="img-fluid"
