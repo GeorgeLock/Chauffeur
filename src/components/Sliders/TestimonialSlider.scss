@@ -1,16 +1,14 @@
 #testimonial {
-  padding: 0 25px;
-  overflow: hidden;
   position: relative;
   height: 100%;
-  top: 50%;
-  left: 50%;
+  margin: 0 auto;
 
-  width: 100%;
-  transform: translateX(-50%);
-  overflow: hidden;
+  width: 90%;
+  text-align: center;
   color: #fff;
-  .testimonial-slider {
+  .slick-arrow:before,
+  .slick-arrow:after {
+    font-size: 25px;
   }
   h1,
   h2,
@@ -28,7 +26,5 @@
   p {
     font-style: italic;
     font-size: 14px;
-  }
-  a {
   }
 }

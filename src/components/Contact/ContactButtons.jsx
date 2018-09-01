@@ -5,14 +5,14 @@ import BookingForm from '../../../static/assets/misc/BookingForm.pdf';
 const ContactButtons = () => {
   return (
     <div id="contact-buttons">
-      <Button raised primary href={BookingForm} iconClassName="fas fa-user">
+      <Button raised secondary href={BookingForm} iconClassName="fas fa-user">
         Open an Account
       </Button>
       <Button
         className="mr-3 ml-3"
         href="https://www.chauffeurdrivesystems.com/ClientPortal.aspx?SYS_ID=109"
         raised
-        primary
+        secondary
         iconClassName="fas fa-taxi"
       >
         Make a Booking
@@ -20,7 +20,7 @@ const ContactButtons = () => {
       <Button
         raised
         href="/contact"
-        primary
+        secondary
         iconClassName="fas fa-envelope-open"
       >
         Request a Quote

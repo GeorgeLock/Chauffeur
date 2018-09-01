@@ -22,18 +22,23 @@
   }
 
   .home {
+    opacity: 0;
     background: url('../../../static/assets/misc/Chauffeur_rose.jpg') no-repeat
       center;
     background-size: cover;
+    animation: fadeIn 300ms 150ms forwards;
   }
   .about {
+    opacity: 0;
     background: url('../../../static/assets/Trio/Trio_with_pillar.jpg')
       no-repeat bottom;
     background-size: cover;
+    animation: fadeIn 300ms 150ms forwards;
   }
   .default {
     background: url('../../../static/assets/Wedding_01.jpg') no-repeat center;
     background-size: cover;
+    animation: fadeIn 300ms 150ms forwards;
   }
 }
 
@@ -42,5 +47,14 @@
     .header-image {
       min-height: 55%;
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

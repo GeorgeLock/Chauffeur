@@ -17,12 +17,16 @@ const Home = ({ children }) => {
         </Grid>
         <div className="content-main">
           <Grid>
-            <Cell size={6}>
+            <Cell size={6} tabletSize={6}>
               <Media>
-                <img src={BusinessImage} alt="Business Image" />
+                <img
+                  className="img-fluid"
+                  src={BusinessImage}
+                  alt="Business Image"
+                />
               </Media>
             </Cell>
-            <Cell size={6} className="">
+            <Cell size={6} tabletSize={6} className="">
               <h2 className="display-4 page-subheading">
                 Reliable Chauffeur Travel
               </h2>

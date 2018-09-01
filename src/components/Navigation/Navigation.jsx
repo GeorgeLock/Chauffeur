@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import NavigationDrawer from "react-md/lib/NavigationDrawers";
-import ToolbarActions from "../ToolbarActions/ToolbarActions";
-
-import Footer from "../Footer/Footer";
-import GetNavList from "./NavList";
-import Header from "../Header/Header";
-import "./Navigation.scss";
+import React, { Component } from 'react';
+import NavigationDrawer from 'react-md/lib/NavigationDrawers';
+import ToolbarActions from '../ToolbarActions/ToolbarActions';
+import PageTransition from 'gatsby-plugin-page-transitions';
+import Footer from '../Footer/Footer';
+import GetNavList from './NavList';
+import Header from '../Header/Header';
+import './Navigation.scss';
 
 class Navigation extends Component {
   render() {
@@ -27,6 +27,7 @@ class Navigation extends Component {
           localTitle={this.props.LocalTitle}
           testimonialEdges={this.props.testimonialEdges}
         />
+
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>

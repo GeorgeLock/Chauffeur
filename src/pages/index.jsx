@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import TestimonialSlider from '../components/Sliders/TestimonialSlider';
 import SEO from '../components/SEO/SEO';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import PageTransition from 'gatsby-plugin-page-transitions';
 import config from '../../data/SiteConfig';
 import Home from '../components/Content/Home';
 class Index extends React.Component {
@@ -10,17 +10,19 @@ class Index extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const fileEdges = this.props.data.allFile.edges;
     return (
-      <div>
-        <Helmet>
-          <title>{config.siteTitle}</title>
-          <link rel="canonical" href={`${config.siteUrl}`} />
-        </Helmet>
+      <PageTransition transitionTime={300}>
+        <div>
+          <Helmet>
+            <title>{config.siteTitle}</title>
+            <link rel="canonical" href={`${config.siteUrl}`} />
+          </Helmet>
 
-        <Home>
-          <TestimonialSlider testimonialEdges={postEdges} />
-        </Home>
-        <SEO postEdges={postEdges} />
-      </div>
+          <Home>
+            <TestimonialSlider testimonialEdges={postEdges} />
+          </Home>
+          <SEO postEdges={postEdges} />
+        </div>
+      </PageTransition>
     );
   }
 }

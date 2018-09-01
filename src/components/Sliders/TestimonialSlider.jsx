@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import { Button, Paper } from 'react-md';
+import { Button, Grid, Cell } from 'react-md';
 import './TestimonialSlider.scss';
 import 'react-slick/';
 class TestimonialSlider extends Component {
@@ -17,6 +17,7 @@ class TestimonialSlider extends Component {
       fade: true,
       centerMode: false
     };
+
     return (
       <section id="testimonial">
         <section className="">

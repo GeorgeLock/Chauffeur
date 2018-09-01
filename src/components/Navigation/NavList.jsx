@@ -1,62 +1,62 @@
-import React from "react";
-import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
+import React from 'react';
+import FontIcon from 'react-md/lib/FontIcons';
+import Link from 'gatsby-link';
 
 function GetNavList(config) {
   const NavList = [
     {
-      primaryText: "About",
+      primaryText: 'About',
       subheader: true
     },
     {
-      primaryText: "Home",
+      primaryText: 'Home',
       leftIcon: <FontIcon>home</FontIcon>,
       component: Link,
-      to: "/"
+      to: '/'
     },
     {
-      primaryText: "Testimonials",
+      primaryText: 'Testimonials',
       leftIcon: <FontIcon>person</FontIcon>,
       component: Link,
-      to: "/testimonials/"
+      to: '/testimonials/'
     },
 
     {
       divider: true
     },
     {
-      primaryText: "Services",
+      primaryText: 'Services',
       subheader: true
     },
     {
-      primaryText: "Business",
+      primaryText: 'Business',
       leftIcon: <FontIcon>business_center</FontIcon>,
       component: Link,
-      to: "/business/"
+      to: '/business/'
     },
     {
-      primaryText: "Airports",
+      primaryText: 'Airports',
       leftIcon: <FontIcon>local_airport</FontIcon>,
       component: Link,
-      to: "/airports/"
+      to: '/airports/'
     },
     {
-      primaryText: "Events",
+      primaryText: 'Events',
       leftIcon: <FontIcon>event</FontIcon>,
       component: Link,
-      to: "/events/"
+      to: '/events/'
     },
     {
-      primaryText: "Students",
+      primaryText: 'Students',
       leftIcon: <FontIcon>book</FontIcon>,
       component: Link,
-      to: "/students/"
+      to: '/students/'
     },
     {
-      primaryText: "Weddings",
+      primaryText: 'Weddings',
       leftIcon: <FontIcon>directions_car</FontIcon>,
       component: Link,
-      to: "/weddings/"
+      to: '/weddings/'
     },
 
     {
@@ -64,13 +64,13 @@ function GetNavList(config) {
     },
     {
       subheader: true,
-      primaryText: "Contact"
+      primaryText: 'Contact'
     },
     {
-      primaryText: "Enquiry",
+      primaryText: 'Enquiry',
       leftIcon: <FontIcon>mail_outline</FontIcon>,
       component: Link,
-      to: "/contact/"
+      to: '/contact/'
     }
   ];
 
@@ -79,8 +79,8 @@ function GetNavList(config) {
       NavList.push({
         primaryText: link.label,
         leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
-        component: "i",
-        href: link.url
+        component: 'i',
+        to: link.url
       });
     });
   }
