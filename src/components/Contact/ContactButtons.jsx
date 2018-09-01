@@ -1,9 +1,10 @@
-import React from "react";
-import { Button } from "react-md";
-import BookingForm from "../../../static/assets/misc/BookingForm.pdf";
+import React from 'react';
+import { Button } from 'react-md';
+import './ContactButtons.scss';
+import BookingForm from '../../../static/assets/misc/BookingForm.pdf';
 const ContactButtons = () => {
   return (
-    <div>
+    <div id="contact-buttons">
       <Button raised primary href={BookingForm} iconClassName="fas fa-user">
         Open an Account
       </Button>

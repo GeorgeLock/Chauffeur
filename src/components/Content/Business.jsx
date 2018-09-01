@@ -1,17 +1,29 @@
-import React from "react";
-import { Grid, Cell, Button } from "react-md";
-import "./default.scss";
-import ContactButtons from "../Contact/ContactButtons";
-
-import Horstman from "../../../static/logos/Horstman-Group-Logo-web.jpg";
-import Novia from "../../../static/logos/Novia_Financial_plc.jpg";
-import SJGB from "../../../static/logos/SJGB_Logo_signature.jpg";
-import Unividual from "../../../static/logos/Unividual.jpg";
-import AbbeyHotel from "../../../static/logos/ABBEY-HOTEL-LOGO-BLACK.jpg";
-import ApsleyHouse from "../../../static/logos/ApsleyHouse.jpg";
-import Forward from "../../../static/logos/Forward-goyourownway.jpg";
+import React from 'react';
+import { Grid, Cell, Button } from 'react-md';
+import './default.scss';
+import ContactButtons from '../Contact/ContactButtons';
+import Slider from 'react-slick';
+import Horstman from '../../../static/logos/Horstman-Group-Logo-web.jpg';
+import Novia from '../../../static/logos/Novia_Financial_plc.jpg';
+import SJGB from '../../../static/logos/SJGB_Logo_signature.jpg';
+import Unividual from '../../../static/logos/Unividual.jpg';
+import AbbeyHotel from '../../../static/logos/ABBEY-HOTEL-LOGO-BLACK.jpg';
+import ApsleyHouse from '../../../static/logos/ApsleyHouse.jpg';
+import Forward from '../../../static/logos/Forward-goyourownway.jpg';
 
 const Business = () => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 3000,
+    fade: true,
+    centerMode: false
+  };
   return (
     <div className="container text-sm-center text-md-left">
       <h1 className="display-3 text-center page-heading">Business</h1>
@@ -81,45 +93,47 @@ const Business = () => {
               <ContactButtons />
             </Cell>
           </Cell>
-          <Cell size={5} tabletSize={12}>
+          <Cell size={4} desktopOffset={1} tabletSize={12}>
             <h2 className="display-4 page-subheading">Some of our Clients</h2>
             <Cell size={12}>
-              <img
-                className="img-fluid"
-                src={Horstman}
-                alt="Chauffeur travel client Horstman"
-              />
-              <img
-                className="img-fluid  mr-3 ml-3"
-                src={Novia}
-                alt="Chauffeur travel client Novia Financial"
-              />
-              <img
-                className="img-fluid"
-                src={SJGB}
-                alt="Chauffeur travel client Sailor Jerry"
-              />
+              <Slider {...settings}>
+                <img
+                  className="img-logo"
+                  src={Horstman}
+                  alt="Chauffeur travel client Horstman"
+                />
+                <img
+                  className="img-logo  mr-3 ml-3"
+                  src={Novia}
+                  alt="Chauffeur travel client Novia Financial"
+                />
+                <img
+                  className="img-logo"
+                  src={SJGB}
+                  alt="Chauffeur travel client Sailor Jerry"
+                />
 
-              <img
-                className="img-fluid"
-                src={Unividual}
-                alt="Chauffeur travel client Unividual"
-              />
-              <img
-                className="img-fluid"
-                src={ApsleyHouse}
-                alt="Chauffeur travel client Apsley House"
-              />
-              <img
-                className="img-fluid"
-                src={Forward}
-                alt="Chauffeur travel client Forward"
-              />
-              <img
-                className="img-fluid"
-                src={AbbeyHotel}
-                alt="'Chauffeur Travel client Abbey Hotel"
-              />
+                <img
+                  className="img-logo"
+                  src={Unividual}
+                  alt="Chauffeur travel client Unividual"
+                />
+                <img
+                  className="img-logo"
+                  src={ApsleyHouse}
+                  alt="Chauffeur travel client Apsley House"
+                />
+                <img
+                  className="img-logo"
+                  src={Forward}
+                  alt="Chauffeur travel client Forward"
+                />
+                <img
+                  className="img-logo"
+                  src={AbbeyHotel}
+                  alt="'Chauffeur Travel client Abbey Hotel"
+                />
+              </Slider>
             </Cell>
           </Cell>
         </Grid>

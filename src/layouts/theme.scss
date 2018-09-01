@@ -1,32 +1,66 @@
-@import "~react-md/src/scss/react-md";
-$md-primary-color: #1b1b1b;
-$md-secondary-color: #fefefe;
-$md-tertiary-color: #fff;
+@import '~react-md/src/scss/react-md';
 
-$text-primary: #666;
-$text-secondary: #777;
-$text-tertiary: #fff;
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: $text-secondary;
+$md-primary-color: $md-grey-900;
+$md-secondary-color: $md-light-blue-a-700;
+$md-tertiary-color: $md-deep-orange-a-700;
+@include react-md-everything;
+.container {
+  width: 90%;
+}
+
+.md-background--secondary {
+  color: #fff !important;
 }
 
 .page-heading {
-  color: $text-primary;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
 }
 .page-subheading {
-  color: $text-secondary;
   font-size: 2rem;
   font-weight: 300;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
 }
+
+.md-tile-text--primary {
+  color: #555;
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+.md-list-item {
+  i.md-icon.material-icons {
+    color: #444;
+  }
+}
+.md-media {
+  overflow: hidden;
+
+  img {
+    transition: all 0.5s ease-out;
+
+    &:hover {
+    }
+  }
+}
+
+.md-background--primary {
+  color: #fff !important;
+}
+.md-background--flat {
+  color: #fff !important;
+}
+
+label {
+  font-size: 1.2rem !important;
+  color: #222 !important;
+}
+
 #main-content {
   height: 100%;
   padding: 0;
@@ -36,11 +70,6 @@ h5 {
 .main-container {
   padding-top: 92vh;
   transition: all 0.8s ease-in-out;
-}
-
-.main-container,
-.darker-background {
-  background-color: $md-tertiary-color;
 }
 
 a:link {

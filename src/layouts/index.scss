@@ -51,8 +51,8 @@ nav {
   color: #2e86c1 !important;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600|Montserrat:300,400,500|Material+Icons");
-@import "~react-md/src/scss/react-md";
-@import "theme.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600|Roboto:300,400,500|Material+Icons');
+@import '~react-md/src/scss/react-md';
+@import 'theme.scss';
 
 @include react-md-everything;

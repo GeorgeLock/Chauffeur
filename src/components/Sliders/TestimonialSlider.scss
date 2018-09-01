@@ -1,9 +1,13 @@
 #testimonial {
+  padding: 0 25px;
+  overflow: hidden;
   position: relative;
-  top: 70%;
-  border-radius: 10px;
-  width: 60%;
-  transform: translateY(-50%);
+  height: 100%;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+  transform: translateX(-50%);
   overflow: hidden;
   color: #fff;
   .testimonial-slider {
@@ -13,7 +17,7 @@
   h3,
   h4,
   h5 {
-    margin-top: 5px;
+    margin: 15px 0;
     color: inherit;
   }
 
@@ -22,8 +26,9 @@
     color: inherit;
   }
   p {
+    font-style: italic;
+    font-size: 14px;
   }
   a {
-    margin: 10px 0;
   }
 }

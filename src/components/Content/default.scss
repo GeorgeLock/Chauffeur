@@ -1,11 +1,9 @@
 .content-main {
   padding: 80px 0;
-  width: 100%;
 }
 .content-aside {
   padding-top: 90px;
   padding-bottom: 100px;
-  width: 100%;
 }
 
 ul {
@@ -20,13 +18,38 @@ ul {
 .subheading {
   font-size: 1.6rem;
 }
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#bg-audi-parallax {
+  max-height: 100%;
+  height: 100%;
+  min-height: 360px;
+  background: url('../../../public/assets/misc/Little_Extras.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
+#logo-slider {
+  width: 100%;
+  img {
+    padding: auto;
+  }
+}
+
+.img-logo {
+  margin: 0 auto;
+  max-width: 50%;
+  max-height: 50%;
+}
 #testimonials {
   p {
     font-weight: 300;
     color: #555;
     font-style: italic;
-    margin: auto;
   }
   .md-card-title {
     min-height: 50px;
@@ -51,15 +74,4 @@ ul {
 .md-caption {
   font-size: 1.1rem;
   color: #555;
-}
-.img-small {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-  margin: auto;
-}
-
-.img-responsive {
-  width: 100%;
-  height: 100%;
 }

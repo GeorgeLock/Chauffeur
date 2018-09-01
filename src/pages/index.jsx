@@ -1,22 +1,25 @@
-import React from "react";
-import Helmet from "react-helmet";
-
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
-import Home from "../components/Content/Home";
+import React from 'react';
+import Helmet from 'react-helmet';
+import TestimonialSlider from '../components/Sliders/TestimonialSlider';
+import SEO from '../components/SEO/SEO';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import config from '../../data/SiteConfig';
+import Home from '../components/Content/Home';
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const fileEdges = this.props.data.allFile.edges;
     return (
-      <div className="">
+      <div>
         <Helmet>
           <title>{config.siteTitle}</title>
           <link rel="canonical" href={`${config.siteUrl}`} />
         </Helmet>
 
+        <Home>
+          <TestimonialSlider testimonialEdges={postEdges} />
+        </Home>
         <SEO postEdges={postEdges} />
-        <Home />
       </div>
     );
   }
@@ -59,26 +62,23 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [fields___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-          }
+    allMarkdownRemark( sort: { order: DESC, fields: [frontmatter___date]},
+      filter: {fileAbsolutePath: {regex: "../(testimonials)/.*\\.md$/"}}){
+        edges{
+         
+      node{
+        html
+        id
+        frontmatter{
+          title
+          cover
         }
+        excerpt
       }
+     
     }
   }
+
+    }
+  
 `;

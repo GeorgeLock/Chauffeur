@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import {FontIcon} from 'react-md';
+import { FontIcon } from 'react-md';
 import UserLinks from '../UserLinks/UserLinks';
 import config from '../../../data/SiteConfig';
 import './Footer.scss';
 import ContactForm from '../Contact/ContactForm';
 import ServicesBox from '../Services/ServicesBox';
 class Footer extends Component {
-  constructor(){
+  constructor() {
     super();
-    this.state = {showContact: false};
-  
+    this.state = { showContact: false };
   }
 
   render() {
@@ -22,17 +21,15 @@ class Footer extends Component {
     }
     return (
       <div>
-        <div className="container md-grid">
-        <ServicesBox />
+        <div className="container">
+          <ServicesBox />
         </div>
-      <footer className={fixedFooter ? 'footer footer-fixed' : 'footer'}>
-        
-        {userLinks ? <UserLinks config={config} labeled /> : null}
-        <div className="notice-container container md-grid">
-           
-          <div className="rss" />
-        </div>
-      </footer>
+        <footer className={fixedFooter ? 'footer footer-fixed' : 'footer'}>
+          {userLinks ? <UserLinks config={config} labeled /> : null}
+          <div className="notice-container container md-grid">
+            <div className="rss" />
+          </div>
+        </footer>
       </div>
     );
   }

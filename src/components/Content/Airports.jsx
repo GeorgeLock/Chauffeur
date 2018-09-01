@@ -1,9 +1,9 @@
-import React from "react";
-import "./default.scss";
-import { Grid, Cell } from "react-md";
-import TestimonialSlider from "../Sliders/TestimonialSlider";
-import ContactButtons from "../Contact/ContactButtons";
-import "../../layouts/animations.css";
+import React from 'react';
+import './default.scss';
+import { Grid, Cell } from 'react-md';
+import TestimonialSlider from '../Sliders/TestimonialSlider';
+import ContactButtons from '../Contact/ContactButtons';
+import '../../layouts/animations.css';
 const AirportsPage = ({ data }) => {
   return (
     <div className="container text-sm-center text-md-left">
@@ -27,9 +27,7 @@ const AirportsPage = ({ data }) => {
             escort you to our vehicle taking control of your luggage leaving you
             relaxed and ready to enjoy your onward journey.
           </p>
-          <Cell size={4}>
-            <TestimonialSlider testimonial={data} />
-          </Cell>
+
           <Cell size={12}>
             <ContactButtons />
           </Cell>

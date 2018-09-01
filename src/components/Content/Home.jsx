@@ -1,28 +1,28 @@
-import React from "react";
-import "./default.scss";
-import "../../layouts/animations.css";
-import BusinessImage from "../../../static/assets/misc/business.jpg";
-import AwardImage from "../../../static//logos/QSI-award.jpg";
-const Home = () => {
+import React from 'react';
+import './default.scss';
+import '../../layouts/animations.css';
+import { Grid, Cell, Media } from 'react-md';
+import BusinessImage from '../../../static/assets/misc/business.jpg';
+import AwardImage from '../../../static//logos/QSI-award.jpg';
+const Home = ({ children }) => {
   return (
-    <div className="container text-sm-center text-md-left">
-      <div className="row">
-        <div className="col-md-12">
-          <h1 className="display-3 text-center page-heading">
-            Welcome to Chauffeur Travel
-          </h1>
-        </div>
-
+    <div>
+      <div className="container text-sm-center text-md-left">
+        <Grid>
+          <Cell size={12}>
+            <h1 className="display-3 page-heading">
+              Welcome to Chauffeur Travel
+            </h1>
+          </Cell>
+        </Grid>
         <div className="content-main">
-          <div className="row">
-            <div className="image-container col-lg-5">
-              <img
-                className="img-responsive d-md-none d-lg-block"
-                src={BusinessImage}
-                alt="Business Image"
-              />
-            </div>
-            <div className="col-lg-7">
+          <Grid>
+            <Cell size={6}>
+              <Media>
+                <img src={BusinessImage} alt="Business Image" />
+              </Media>
+            </Cell>
+            <Cell size={6} className="">
               <h2 className="display-4 page-subheading">
                 Reliable Chauffeur Travel
               </h2>
@@ -46,12 +46,15 @@ const Home = () => {
                   luxurious experience as well.
                 </strong>
               </p>
-            </div>
-          </div>
+            </Cell>
+          </Grid>
         </div>
+      </div>
+
+      <div className="container">
         <div className="content-aside">
-          <div className="row">
-            <div className="col-md-8">
+          <Grid>
+            <Cell size={9}>
               <h2 className="display-4 page-subheading">
                 Professional Driver QSi Awards 2017
               </h2>
@@ -90,20 +93,41 @@ const Home = () => {
                 </em>
                 - <strong> Managing Director - James O’Neill</strong>
               </p>
-            </div>
-
-            <div className="col-md-4">
-              <img
-                className="img-small"
-                src={AwardImage}
-                alt="Chauffeur Travel QSI award"
-              />
-            </div>
-          </div>
+            </Cell>
+            <Cell size={3}>
+              <img src={AwardImage} alt="Chauffeur Travel QSI award" />
+            </Cell>
+          </Grid>
         </div>
+      </div>
+      <div id="bg-audi-parallax">
+        <div className="overlay container-fluid">{children}</div>
       </div>
     </div>
   );
 };
 
 export default Home;
+export const pageQuery = graphql`
+
+query Testis{
+
+  allMarkdownRemark( sort: { order: DESC, fields: [frontmatter___date]},
+      filter: {fileAbsolutePath: {regex: "../(testimonials)/.*\\.md$/"}}){
+        edges{
+         
+      node{
+        html
+        id
+        frontmatter{
+          title
+          cover
+        }
+        excerpt
+      }
+     
+    }
+  }
+
+}
+`;

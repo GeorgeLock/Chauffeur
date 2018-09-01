@@ -1,23 +1,24 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import { Button, Paper } from "react-md";
-import "./TestimonialSlider.scss";
-import "react-slick/";
+import React, { Component } from 'react';
+import Slider from 'react-slick';
+import { Button, Paper } from 'react-md';
+import './TestimonialSlider.scss';
+import 'react-slick/';
 class TestimonialSlider extends Component {
   render() {
     const settings = {
       dots: false,
-      arrows: false,
+      arrows: true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 3000,
+      speed: 500,
+      autoplaySpeed: 15000,
       fade: true,
-      centerMode: true
+      centerMode: false
     };
     return (
-      <section id="testimonial" class="container">
+      <section id="testimonial">
         <section className="">
           <div id="" className="text-center">
             <Slider {...settings}>
@@ -37,7 +38,7 @@ class TestimonialSlider extends Component {
               className=""
               href="/contact/"
               raised
-              primary
+              secondary
               iconClassName="fas fa-envelope-open"
             >
               Contact Us
