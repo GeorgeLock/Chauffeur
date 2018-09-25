@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import ImageGallerys from '../components/ImageGallery/ImageGallery';
+
 import config from '../../data/SiteConfig';
 import PageTransition from 'gatsby-plugin-page-transitions';
 class GalleryPage extends Component {
@@ -13,7 +13,7 @@ class GalleryPage extends Component {
             <link rel="canonical" href={`${config.siteUrl}/gallery/`} />
           </Helmet>
           <h1 className="display-3 text-center">Photo Gallery</h1>
-          <ImageGallerys />
+        
         </div>
       </PageTransition>
     );
