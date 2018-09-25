@@ -1,7 +1,7 @@
 @import '~react-md/src/scss/react-md';
 
 $md-primary-color: $md-grey-900;
-$md-secondary-color: $md-blue-400;
+$md-secondary-color: $md-indigo-400;
 $md-tertiary-color: $md-light-blue-a-200;
 @include react-md-everything;
 .container {
@@ -15,7 +15,7 @@ $md-tertiary-color: $md-light-blue-a-200;
 .page-heading {
   text-align: center;
   font-size: 2.8rem;
-  font-weight: 400;
+  font-weight: 300;
   font-family: 'Merriweather', sans-serif;
   color: $md-secondary-color;
 }
