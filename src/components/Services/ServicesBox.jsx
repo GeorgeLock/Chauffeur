@@ -11,6 +11,7 @@ import ServiceCard from './ServiceCard';
 const ServicesBox = () => {
   return (
     <div id="services">
+      <h2 className="page-subheading display-4 text-center">Services</h2>
       <Grid>
         <ServiceCard
           title="Business"

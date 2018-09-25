@@ -20,7 +20,6 @@ class Index extends React.Component {
           <Home>
             <TestimonialSlider testimonialEdges={postEdges} />
           </Home>
-          <SEO postEdges={postEdges} />
         </div>
       </PageTransition>
     );

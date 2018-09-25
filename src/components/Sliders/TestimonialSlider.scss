@@ -1,15 +1,15 @@
 #testimonial {
-  position: relative;
   height: 100%;
-  margin: 0 auto;
-
+  margin: auto;
   width: 90%;
   text-align: center;
   color: #fff;
+
   .slick-arrow:before,
   .slick-arrow:after {
     font-size: 25px;
   }
+
   h1,
   h2,
   h3,
@@ -21,6 +21,7 @@
 
   p,
   div {
+    height: 100%;
     color: inherit;
   }
   p {

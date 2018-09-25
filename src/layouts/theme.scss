@@ -1,8 +1,8 @@
 @import '~react-md/src/scss/react-md';
 
 $md-primary-color: $md-grey-900;
-$md-secondary-color: $md-blue-a-400;
-$md-tertiary-color: $md-blue-a-200;
+$md-secondary-color: $md-light-blue-a-400;
+$md-tertiary-color: $md-deep-orange-a-400;
 @include react-md-everything;
 .container {
   width: 90%;
@@ -14,15 +14,15 @@ $md-tertiary-color: $md-blue-a-200;
 
 .page-heading {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   color: $md-secondary-color;
 }
 .page-subheading {
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 300;
+  font-family: 'Merriweather', sans-serif;
   color: $md-secondary-color;
 }
 
@@ -31,7 +31,6 @@ strong {
 }
 
 #testimonials {
-  h1,
   h2,
   h3,
   h4,
@@ -42,10 +41,10 @@ strong {
 }
 .md-tile-text--primary {
   color: #555;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Meriweather', sans-serif;
 }
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .md-list-item {
   i.md-icon.material-icons {
