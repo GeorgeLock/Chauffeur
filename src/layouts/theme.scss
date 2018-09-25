@@ -1,8 +1,8 @@
 @import '~react-md/src/scss/react-md';
 
 $md-primary-color: $md-grey-900;
-$md-secondary-color: $md-light-blue-a-400;
-$md-tertiary-color: $md-light-blue-a-300;
+$md-secondary-color: $md-blue-400;
+$md-tertiary-color: $md-light-blue-a-200;
 @include react-md-everything;
 .container {
   width: 90%;
